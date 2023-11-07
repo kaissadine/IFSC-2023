@@ -1,9 +1,18 @@
+:root {
+    --cinza: #353F40; 
+    --verde: #0C260E; 
+    --cinza-claro: #A69F92; 
+    --bege: #D9D0C1; 
+    --marrom: #8C564A; 
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    border: none;
 }
 
 html {
@@ -21,42 +30,92 @@ a {
 }
 
 a:hover {
-    color: #0C260E;
+    color: var(--cinza);
     transition: .5s;
-    background-color: #D9D0C1;
+    background-color: var(--bege);
     padding: .25rem;
 }
 
 header {
+    background-color: var(--cinza);
+    color: var(--bege);
+}
+
+.conteudo__header {
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2.5rem;
-    background-color: #353F40;
-    color: #D9D0C1;
+    padding: 0 2rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 300px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 section {
+    max-width: 1000px;
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 1rem;
     padding: 0 3.125rem;
 }
 
-.descricao__produto {
+.descricao__produto p {
+    padding: 1.5rem 0;
+}
+
+.descricao__botoes {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 150px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.descricao__botoes button{
+    padding: .75rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    background-color: var(--verde);
+    color: var(--bege);
+    font-weight: bold;
+}
+
+.descricao__botoes button:hover {
+    background-color: #214e25f1;
+    transition: .25s;
+    transform: scale(1.069);
+    cursor: pointer;
+}
+
+button img {
+    width: 16px;
+    font-weight: bold;
 }
 
 footer {
+    background-color: var(--cinza);   
+    color: var(--bege);
+}
+
+.conteudo__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #353F40;
-    color: #D9D0C1;
+
+ 
 }
 
 .footer__title {
