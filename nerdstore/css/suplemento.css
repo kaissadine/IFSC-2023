@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --cinza-escuro: #353F40; 
+    --verde: #0C260E; 
+    --cinza-claro: #A69F92; 
+    --cinza-bege: #D9D0C1; 
+    --marrom: #8C564A; 
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+header, footer {
+    border-radius: 0 0 8px 8px;
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-bege);
+}
+
+.cabecalho__conteudo, .rodape__conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cabecalho__conteudo nav {
+    width: 44px;
+}
+
+.cabecalho__conteudo img {
+    cursor: pointer;
+}
+
+.imagem-principal {
+    width: 250px;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.conteudo {
+    text-align: justify;
+}
+
+.conteudo p {
+    margin-top: .5rem;
+}
+
+.botoes {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .75rem;
+}
+
+#comprar::before {
+    content: url(../img/cart-shopping-svgrepo-com.svg);
+}
+
+.botoes a {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--verde);
+    width: 100%;
+    color: var(--cinza-bege);
+    font-weight: 500;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.botoes a:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.05);
+    background-color: #194d1d;
+    box-shadow: 5px 5px 5px rgb(163, 163, 163);
+}
+
+.botoes a:active{
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.95);
+}
+
+footer {
+    border-radius: 8px 8px 0 0;
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-bege);
+}
+
+.menu__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--cinza-claro);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    color: var(--verde);
+}
+
+.menu__mobile ul{
+    padding: 2rem .5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.menu__lista > li {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.menu__mobile li:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.menu__mobile a {
+    color: var(--cinza-escuro);
+    padding: 1rem 0;
+}
+
+.menu__mobile figure {
+    width: 40px;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+}
