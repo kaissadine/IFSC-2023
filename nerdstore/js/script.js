@@ -3,9 +3,9 @@ const btnFechar = document.getElementById("fechar")
 const menuMobile = document.querySelector(".menu__mobile")
 
 btnMenu.addEventListener("click", () => {
-    menuMobile.style.display = "block"
+    menuMobile.classList.remove("hide")
 })
 
 btnFechar.addEventListener("click", () => {
-    menuMobile.style.display = "none"
+    menuMobile.classList.add("hide")
 })
