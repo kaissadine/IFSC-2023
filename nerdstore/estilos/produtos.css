@@ -20,6 +20,10 @@ h1 {
     font-family: 'Chakra Petch', sans-serif;
 }
 
+h2 {
+    font-size: 1.3rem;
+}
+
 img {
     max-width: 100%;
 }
@@ -37,7 +41,6 @@ body {
 header {
     border-radius: 0 0 8px 8px;
     background-color: var(--cinza-escuro);
-    
     color: var(--cinza-bege);
 }
 
@@ -46,7 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;    
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -68,7 +71,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 5rem;
     padding: 0 1rem;
     background-color: whitesmoke;
     color: #333;
@@ -76,7 +79,7 @@ main {
 
 .content {
     text-align: justify;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -124,6 +127,43 @@ main {
 .buttons a:active{
     background-color: rgb(0, 0, 0);
     transform: scale(0.95);
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    border: 2px solid var(--cinza-claro);
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-bege);
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--cinza-escuro);  
+}
+
+td {
+    border: 1px solid var(--cinza-claro);
+    padding: 12px;
+    text-align: left;
+}
+
+tbody {
+    background-color: var(--verde);
+}
+
+tr:nth-child(even) {
+    background-color: var(--cinza-bege);
+    color: var(--cinza-escuro);
+}
+
+tr:hover {
+    background-color: var(--marrom);
+    color: var(--cinza-bege);
 }
 
 footer {
