@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produto 1</title>
+    <title>Suplemento Gamer</title>
 
     <!-- Link da fonte pega no google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/suplemento.css">
+    <link rel="stylesheet" href="estilos/produtos.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header__content">
+            <nav class="header__content">
                 <h1>NerdStore</h1>
-                <nav>
-                    <img id="menu-btn" src="./img/menu-svgrepo-com.svg" alt="ícone menu">
-                </nav>
-            </div>
+                <div>
+                    <figure>
+                        <img id="menu-btn" src="./imagens/menu-svgrepo-com.svg" alt="ícone menu">
+                    </figure>
+                    <ul class="menu__list-desktop hide-desktop">
+                        <li>
+                            <a href="./index.html">Lista de produtos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-title">Produtos</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="./monitor.html">Monitor</a>
+                                </li>
+                                <li>
+                                    <a href="./mouse.html">Mouse</a>
+                                </li>
+                                <li>
+                                    <a href="./teclado.html">Teclado</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
             <figure>
-                <img class="imagem-principal" src="./img/em.jpg" alt="foto suplemento gamer">
+                <img class="imagem-principal" src="./imagens/em.png" alt="foto suplemento gamer">
             </figure>
             <div class="content">
                 <h2>Suplemento Gamer - Energético - X-bomb - 30 doses</h2>
@@ -34,6 +55,50 @@
                     <a href="./index.html">Lista de produtos</a>
                 </div>
             </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <footer>
             <h1>NerdStore</h1>
@@ -41,29 +106,29 @@
     </div>
     <div class="menu__mobile hide">
         <figure>
-            <img id="fechar" src="./img/xmark-svgrepo-com.svg" alt="icone de fechar menu">
+            <img id="fechar" src="./imagens/xmark-svgrepo-com.svg" alt="icone de fechar menu">
         </figure>
-        <ul class="menu__list">
+        <ul>
             <li>
-                <a href="index.html">Lista de Produtos</a>      
+                <a href="./index.html">Lista de produtos</a>
             </li>
             <li>
-                <p>Produtos</p>
-                <ul>
+                <a href="#" class="dropdown-title">Produtos</a>
+                <ul class="dropdown">
                     <li>
-                        <a href="monitor.html">Monitor</a>
+                        <a href="#">Monitor</a>
                     </li>
                     <li>
-                        <a href="./mouse.html">Mouse</a>
+                        <a href="#">Mouse</a>
                     </li>
                     <li>
-                        <a href="./teclado.html">Teclado</a>
+                        <a href="#">Teclado</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </div>
     
-    <script src="./js/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

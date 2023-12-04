@@ -37,6 +37,7 @@ body {
 header {
     border-radius: 0 0 8px 8px;
     background-color: var(--cinza-escuro);
+    
     color: var(--cinza-bege);
 }
 
@@ -44,10 +45,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem;    
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-.header__content nav {
+.header__content figure {
     width: 44px;
 }
 
@@ -56,7 +59,7 @@ header {
 }
 
 .imagem-principal {
-    width: 250px;
+    width: 350px;
     margin-top: 4rem;
     border-radius: 4px;
 }
@@ -73,6 +76,8 @@ main {
 
 .content {
     text-align: justify;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .content p {
@@ -95,7 +100,7 @@ main {
 }
 
 #comprar::before {
-    content: url(../img/cart-shopping-svgrepo-com.svg);
+    content: url(../imagens/cart-shopping-svgrepo-com.svg);
 }
 
 .buttons a {
@@ -113,7 +118,7 @@ main {
     transition: .5s ease-in-out;
     transform: scale(1.05);
     background-color: #194d1d;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322)
 }
 
 .buttons a:active{
@@ -135,33 +140,58 @@ footer {
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: var(--cinza-claro);
+    background-color: var(--marrom);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     color: var(--verde);
     transition: width .5s linear;
 }
 
-.menu__mobile ul{
-    padding: 2rem .5rem;
+ul {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+ul li a:not(.dropdown-title):hover {
+    background-color: #868176;
+    transition: .5s;
+    color: var(--cinza-bege);
+}
+
+ul li a {
+    display: block;
+    padding: 1rem;
     text-align: center;
-    margin-top: 2.5rem;
+    background-color: var(--cinza-bege);
+    color: var(--verde);
+    font-weight: 500;
+    margin-top: 1px;
+    box-shadow: 0 5px 5px black;
 }
 
-.menu__mobile li:nth-child(2) {
-    margin-top: 1rem;
-}
-
-.menu__mobile a, p {
-    color: var(--cinza-escuro);    
-    border-top: 1px solid rgba(0, 0, 0, 0.295);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+.dropdown {
     width: 100%;
-    display: inline-block;
-    padding: .5rem 0;
+    display: none;
+    margin-top: 0;
 }
 
-.menu__mobile a:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.404);
+ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+}
+
+.dropdown-title::after {
+    content: url(../imagens/dropdown-svgrepo-com.svg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
 }
 
 .menu__mobile figure {
@@ -174,4 +204,61 @@ footer {
 
 .hide {
     width: 0;
+    opacity: 0;
+    pointer-events: none;
 }
+
+.hide-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    ul {
+        margin-top: 0;
+        flex-direction: row;
+    }
+
+    ul li {
+        position: relative;
+    }
+    
+    .dropdown {
+        position: absolute;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .menu__mobile {
+        width: 30%;
+    }
+
+    .dropdown-title {
+        padding: 1rem;
+    }
+
+    p, a {
+        font-size: 1.3rem;
+    }
+
+    main {
+        gap: 2rem;
+    }
+
+    .content p {
+        margin-top: 1rem;
+    }
+
+    .buttons {
+        margin-top: 1.5rem;
+    }
+}
+

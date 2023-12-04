@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado Mecânico</title>
+
+    <!-- Link da fonte pega no google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/produtos.css">
+    <link rel="stylesheet" href="estilos/teclado.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="header__content">
+                <h1>NerdStore</h1>
+                <div>
+                    <figure>
+                        <img id="menu-btn" src="./imagens/menu-svgrepo-com.svg" alt="ícone menu">
+                    </figure>
+                    <ul class="menu__list-desktop hide-desktop">
+                        <li>
+                            <a href="./index.html">Lista de produtos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-title">Produtos</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="./monitor.html">Monitor</a>
+                                </li>
+                                <li>
+                                    <a href="./mouse.html">Mouse</a>
+                                </li>
+                                <li>
+                                    <a href="./suplemento.html">Suplemento</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <figure>
+                <img class="imagem-principal" src="./imagens/tl.png" alt="foto suplemento gamer">
+            </figure>
+            <div class="content">
+                <h2>Teclado mêcanico para jogos Redragon K617</h2>
+                <p>Teclado para jogos Redragon K617 60% RGB com fio, teclado mecânico compacto de 61 teclas com teclas brancas e cinzas de cores mistas, switch vermelho linear, suporte para driver profissional</p>
+                <div class="buttons">
+                    <a id="comprar" href="#">Comprar</a>
+                    <a href="./index.html">Lista de produtos</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1>NerdStore</h1>
+        </footer> 
+    </div>
+    <div class="menu__mobile hide">
+        <figure>
+            <img id="fechar" src="./imagens/xmark-svgrepo-com.svg" alt="icone de fechar menu">
+        </figure>
+        <ul>
+            <li>
+                <a href="./index.html">Lista de produtos</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-title">Produtos</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="./monitor.html">Monitor</a>
+                    </li>
+                    <li>
+                        <a href="./mouse.html">Mouse</a>
+                    </li>
+                    <li>
+                        <a href="./suplemento.html">Suplemento</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
