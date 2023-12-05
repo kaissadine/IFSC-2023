@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nerd Store</title>
+    <title>Pagamento</title>
 
     <!-- Link da fonte pega no google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +12,8 @@
 
     <!-- Link dos css usados na página -->
     <link rel="stylesheet" href="estilos/base.css">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/comprar.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -33,10 +31,10 @@
                             <a href="#" class="dropdown-title">Produtos</a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="./monitor.html">Monitor</a>
+                                    <a href="./mouse.html">Mouse</a>
                                 </li>
                                 <li>
-                                    <a href="./mouse.html">Mouse</a>
+                                    <a href="./teclado.html">Teclado</a>
                                 </li>
                                 <li>
                                     <a href="./suplemento.html">Suplemento</a>
@@ -47,47 +45,41 @@
                 </div>
             </nav>
         </header>
+
         <main>
-            <h2>Produtos</h2>
-            <div class="product-list">
-                <a href="./monitor.html" class="product-item">
-                    <figure>
-                        <img src="./imagens/odg5.png" alt="imagem do monitor">
-                    </figure>
-                    <div class="product-details">
-                        <h3>Samsung C34G55TWWL Odyssey 34''</h3>
-                        <p class="price">R$3.269,90</p>
-                    </div>
-                </a>
-                <a href="./mouse.html" class="product-item">
-                    <figure id="mouse">
-                        <img  src="./imagens/mg.png" alt="imagem do mouse">
-                    </figure>
-                    <div class="product-details">
-                        <h3>Mouse Gamer Sem Fio Logitech G703</h3>
-                        <p class="price">R$549,90</p>
-                    </div>
-                </a>
-                <a href="./suplemento.html" class="product-item">
-                    <figure id="suplemento">
-                        <img  src="./imagens/em.png" alt="imagem do suplemento">
-                    </figure>
-                    <div class="product-details">
-                        <h3>Suplemento Gamer - Energético</h3>
-                        <p class="price">R$109,90</p>
-                    </div>
-                </a>
-                <a href="./teclado.html" class="product-item">
-                    <figure>
-                        <img src="./imagens/tl.png" alt="imagem do teclado">
-                    </figure>
-                    <div class="product-details">
-                        <h3>Teclado mecânico para jogos Redragon K617</h3>
-                        <p class="price">R$252,50</p>
-                    </div>
-                </a>
-                
-            </div>
+            <figure>
+                <img src="./imagens/cartao-de-credito.png" alt="ilustração de um cartão de crédito">
+            </figure>
+            <form action="#">
+                <h2>Detalhes do Pagamento</h2>
+              
+                <label for="nome_cartao">Nome no Cartão:</label>
+                <input type="text" required>
+              
+                <label for="numero_cartao">Número do Cartão:</label>
+                <input type="text" required>
+              
+                <label for="data_validade">Data de Validade:</label>
+                <input type="month" required>
+              
+                <label for="cvv">CVV:</label>
+                <input type="text" required>
+              
+                <label for="bandeira_cartao">Bandeira do Cartão:</label>
+                <select required>
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="amex">American Express</option>
+                </select>
+              
+                <label for="promo_code">Código Promocional:</label>
+                <input type="text">
+              
+                <input type="checkbox" required>
+                <label for="terms">Li e concordo com os termos e condições</label>
+              
+                <input type="submit" value="Pagar">
+              </form>
         </main>
         <footer>
             <h1>NerdStore</h1>
@@ -105,10 +97,10 @@
                 <a href="#" class="dropdown-title">Produtos</a>
                 <ul class="dropdown">
                     <li>
-                        <a href="./monitor.html">Monitor</a>
+                        <a href="./mouse.html">Mouse</a>
                     </li>
                     <li>
-                        <a href="./mouse.html">Mouse</a>
+                        <a href="./teclado.html">Teclado</a>
                     </li>
                     <li>
                         <a href="./suplemento.html">Suplemento</a>
@@ -120,5 +112,4 @@
     
     <script src="./scripts/script.js"></script>
 </body>
-
 </html>
